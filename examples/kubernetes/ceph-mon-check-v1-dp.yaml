@@ -34,7 +34,7 @@ spec:
       containers:
         - name: ceph-mon
           image: ceph/daemon:latest
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 6789
           env:
