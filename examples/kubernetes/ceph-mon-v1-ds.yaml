@@ -35,7 +35,7 @@ spec:
       containers:
         - name: ceph-mon
           image: ceph/daemon:latest
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           lifecycle:
             preStop:
                 exec:
